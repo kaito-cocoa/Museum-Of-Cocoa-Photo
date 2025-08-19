@@ -19,11 +19,111 @@
 </head>
 
 <body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">COCOA PHOTO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navLinks" class="collapse navbar-collapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">HOME</a>
+                <a href="#" class="nav-item nav-link">ABOUT</a>
+            </div>
+        </div>
+    </nav>
 
+    <section class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pop">
+                <h2 class="text-center d-none d-lg-block">MY GALLERY</h2>
+            </div>
+            <div class="col-lg-6 px-0">
+                <img src="imgs/pop.JPG" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
 
+    <section class="container-fluid">
+        <div class="row align-items-center content sea">
+            <div class="col-md-6 px-0 order-2 order-md-1">
+                <img src="imgs/sea.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 my-5">
+                        <h2 class="text-center">SEA at GUAM</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis molestias soluta sequi recusandae hic, exercitationem rem architecto expedita, voluptatem inventore error, iste nesciunt labore amet. Animi est architecto nulla hic?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center content mountain">
+            <div class="col-md-6">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 my-5">
+                        <h2 class="text-center">MOUNTAIN at HOKKAIDO</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis molestias soluta sequi recusandae hic, exercitationem rem architecto expedita, voluptatem inventore error, iste nesciunt labore amet. Animi est architecto nulla hic?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 px-0 ">
+                <img src="imgs/mountain.JPG" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row align-items-center content otaru">
+            <div class="col-md-6 px-0 order-2 order-md-1">
+                <img src="imgs/otaru.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 my-5">
+                        <h2 class="text-center">OTARU CANAL</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis molestias soluta sequi recusandae hic, exercitationem rem architecto expedita, voluptatem inventore error, iste nesciunt labore amet. Animi est architecto nulla hic?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center content sakura">
+            <div class="col-md-6">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 my-5">
+                        <h2 class="text-center">CHERRY BLOSSOMES at night</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis molestias soluta sequi recusandae hic, exercitationem rem architecto expedita, voluptatem inventore error, iste nesciunt labore amet. Animi est architecto nulla hic?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 px-0 ">
+                <img src="imgs/sakura.jpeg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $('#mainNavbar');
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            })
+        })
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #b5bad0;
+    font-family: Nunito, sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+}
+
+#mainNavbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffd60a;
+}
+
+#mainNavbar .nav-item {
+    color: white;
+}
+
+#mainNavbar .nav-item:hover {
+    color: #ffd60a;
+}
+
+.pop h2{
+    color: #0d1b2a;
+    font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+    .pop h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.sea h2{
+    color: #00bbf9;
+}
+
+.sea p {
+    color: #3a86ff;
+}
+
+.mountain h2{
+    color: #606c38;
+}
+
+.mountain p {
+    color: #283618;
+}
+
+.otaru h2{
+    color: #cc5803;
+}
+
+.otaru p {
+    color: #78290f;
+}
+
+.sakura h2{
+    color: #f26a8d;
+}
+
+.sakura p {
+    color: #a53860;
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navbar.scrolled {
+    background: #003566;
+    transition: background 500ms;
+}
