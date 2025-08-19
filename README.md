@@ -1,4 +1,6 @@
 # COCOA PHOTO GALLERY
+日常での瞬間や旅行に行った際の思い出をギャラリーにまとめました
+ぜひお楽しみください
 ## 横画面
 <img width="1512" height="823" alt="Image" src="https://github.com/user-attachments/assets/328763d2-ccbe-43f2-91be-1772380fb684" />
 
